@@ -1,11 +1,6 @@
-;(function (){
-  var myFunc = () => console.log('function 1');
+;(function () {
 
-  myFunc();
+  angular.module('fetchApp', []);
+
 })();
 
-;(function (){
-  var myFunc = () => console.log('function 2');
-
-  myFunc();
-})();
