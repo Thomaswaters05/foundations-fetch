@@ -1,7 +1,7 @@
 ;(function () {
   angular.module('fetchApp').controller('MainCtrl', function ($scope, requestService, Response) {
     $scope.responses = [];
-    $scope.url = "http://httpstat.us/200";
+    $scope.url = "https://nss-responsecodes.herokuapp.com/200";
 
     $scope.fetch = () => {
       requestService.get($scope.url).then((success) => {
