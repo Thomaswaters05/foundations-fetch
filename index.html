@@ -40,14 +40,34 @@
 
         <button ng-click="fetch()" name="FETCH" type="submit">FETCH</button>
 
-
-
-      <ul>
-        <li ng-repeat="response in responses">
-          {{response.statusCode}}
-        </li>
-      </ul>
-
+        <table ng-repeat="response in responses" class="u-half-width">
+          <thead>
+            <tr>
+              <th>URL</th>
+              <th>Method</th>
+              <th>Response Time</th>
+              <th>Content Size</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                {{response.responseURL}}
+                  ||
+                Stat Code:  {{response.statusCode}}
+              </td>
+              <td>
+                {{response.method}}
+              </td>
+              <td>
+               <!-- {{trying to figure out}} -->
+              </td>
+              <td>
+                 {{response.length}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
 
       </div>
